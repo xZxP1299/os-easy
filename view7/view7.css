@@ -1,0 +1,14 @@
+.page{
+    height: 500px;
+    
+  }
+
+.first{
+    display: flex;
+    flex-direction: column;
+}
+  
+.first-item{
+    display: flex;
+    flex-direction: row;
+}

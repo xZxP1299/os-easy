@@ -1,0 +1,22 @@
+<div ng-app="myApp.view16" ng-controller="View16Ctrl" class="h4">
+  <span>键入见解</span>
+  <div class="h4-one">
+    
+    <switch opened="autoTime" ></switch1>
+
+  </div>
+  
+  <h4>Window正在使用人工智能来帮助你键入</h4>
+  <p>为了帮助您节省时间和有效地键入内容,Windows可以学习建议单词,<br/>自动更正拼写错误以及解释滑动输入.请查看下
+    面的见解，查看有关<br/>Windows如何学习了解如何改进你的键入的最新统计信息.这些统计信<br/>息仅存储在此设备上,Microsoft不收集输入分析数据.</p>
+   
+  <div ng-init="jianruList" ng-repeat="x in jianruList" class="h4-two">
+    <div class="h4-three" >
+      <h4>{{x.h}}</h4>
+      <p>{{x.p}}</p>
+    </div>
+    <span >{{x.number}}</span>   
+  </div>
+
+  
+</div>

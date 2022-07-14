@@ -1,0 +1,6 @@
+<div class="switch-wrapper">
+    <div style="margin-right:1em ;" >{{$ctrl.opened? "开" : "关"}}</div>
+    <div ng-click="clickSwitch()" ng-class="$ctrl.opened?'switch opened':'switch'">
+        <div ng-class="$ctrl.opened?'open':''"></div>
+    </div>
+</div>

@@ -1,0 +1,157 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 3511917 */
+  /* Color fonts */
+  src: 
+       url('iconfont.woff2?t=1657697538666') format('woff2'),
+       url('iconfont.woff?t=1657697538666') format('woff'),
+       url('iconfont.ttf?t=1657697538666') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-xiayi:before {
+  content: "\e636";
+}
+
+.icon-shanchu:before {
+  content: "\e8b6";
+}
+
+.icon-shangyi:before {
+  content: "\e656";
+}
+
+.icon-xiangxia:before {
+  content: "\e604";
+}
+
+.icon-qita:before {
+  content: "\e601";
+}
+
+.icon-diandiandian:before {
+  content: "\e697";
+}
+
+.icon-shengboyuyinxiaoxi:before {
+  content: "\e8c4";
+}
+
+.icon-riqi:before {
+  content: "\eb2a";
+}
+
+.icon-shurufa:before {
+  content: "\e63b";
+}
+
+.icon-yuyan:before {
+  content: "\e684";
+}
+
+.icon-dayuhao:before {
+  content: "\e627";
+}
+
+.icon-shezhi:before {
+  content: "\e602";
+}
+
+.icon-31yiwen:before {
+  content: "\e603";
+}
+
+.icon-sousuo:before {
+  content: "\e651";
+}
+
+.icon-kuaisufankuifankuiduihua:before {
+  content: "\e692";
+}
+
+.icon-zuojiantou:before {
+  content: "\e625";
+}
+
+.icon-suoxiao:before {
+  content: "\e839";
+}
+
+.icon-xiaomaochushou:before {
+  content: "\e677";
+}
+
+.icon-zuixingengxin:before {
+  content: "\e61e";
+}
+
+.icon-24gl-pause2:before {
+  content: "\ea6d";
+}
+
+.icon-24gl-square:before {
+  content: "\ea98";
+}
+
+.icon-touxiang:before {
+  content: "\e6de";
+}
+
+.icon-cha:before {
+  content: "\e61c";
+}
+
+.icon-yingyong:before {
+  content: "\e600";
+}
+
+.icon-youxi:before {
+  content: "\e643";
+}
+
+.icon-lanya:before {
+  content: "\e660";
+}
+
+.icon-shijian:before {
+  content: "\e665";
+}
+
+.icon-wuxianwangluo:before {
+  content: "\e66c";
+}
+
+.icon-shouye:before {
+  content: "\e640";
+}
+
+.icon-zhanghu:before {
+  content: "\e649";
+}
+
+.icon-xitong:before {
+  content: "\e835";
+}
+
+.icon-fuzhushezhi:before {
+  content: "\e688";
+}
+
+.icon-anquan:before {
+  content: "\e8ab";
+}
+
+.icon-gengxin:before {
+  content: "\e7cb";
+}
+
+.icon-lanya-copy:before {
+  content: "\ea99";
+}
+

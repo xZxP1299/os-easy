@@ -1,0 +1,81 @@
+<!-- <link rel="stylesheet" href="view12.css"> -->
+<div class="page">
+  <div class="view7">
+    <div class="view7-one">
+      <p>当前日期和时间</p>
+      <span>2022年7月11日,9.57</span>
+    </div>
+    <div class="view7-one">
+      <p>自动设置时间</p>
+      <!-- <span style="margin-left:370px ;" >{{item1}}</span> -->
+      <!-- <input type="checkbox" ng-click="change1()" /> -->
+      <!-- <switch opened="false"></switch> -->
+      <switch1 ng-model="switch0"></switch1>
+    </div>
+    <div class="view7-one" ng-class="switch0?'view7-one1':''">
+      <p>自动调整为夏令营时间</p>
+      <!-- <span style="margin-left:300px ;">{{item2}}</span>
+      <input type="checkbox" ng-click="change2()" /> -->
+      <!-- <switch opened="false"></switch> -->
+      <switch1 ng-model="switch1"></switch1>
+    </div>
+    <div class="view7-one" ng-class="switch1?'view7-one1':''">
+      <span class="iconfont icon-shijian box"></span>
+      <p class="timeout">时区</p>
+      <!-- <select ng-init="timeZoneList" ng-model="timeZone" ng-options="x.key for x in timeZoneList" ng-click="getTimeZone()" >
+        <option >{{ timeZone }}</option>
+      </select> -->
+      <dropdown default="北京" source="api/zone.json"></dropdown>
+    </div>
+    <div class="view7-one">
+      <p>自动设置时区</p>
+      <!-- <span style="margin-left:370px ;" >{{item3}}</span>
+      <input type="checkbox" ng-click="change3()" /> --> 
+      <!-- <switch opened="false"></switch> -->
+      <switch1 ng-model="switch2"></switch1>
+    </div>
+    <div class="view7-one">
+      <p>手动设置日期和时间</p>
+      <button ng-click="fun()" class="my-button">更改</button>
+    </div>
+
+    <h6 class="h">其他设置</h6>
+    <div class="view7-one">
+      <p class="tergether">立即同步<br />上次成功同步时间:{{}}<br />时间服务器:{{}}</p>
+      <button class="my-button">立即同步</button>
+    </div>
+    <div class="view7-one">
+      <p>在任务栏中显示其他日历</p>
+      <dropdown default="日历" source="api/calendar.json"></dropdown>
+    </div>
+
+
+  </div>
+  <div>
+    <h6 class="h">相关链接</h6>
+    <div class="h1">
+      <div class="h1-view12">
+        <span class="iconfont icon-yuyan box" style="display:flex; align-items:center;"></span>
+        <a href="#!/view14" ng-click="onJumpPage({ title:'语言与区域1',url:'view14'},3)" >语言和区域1<br />语言包、区域格式</a>
+      </div>
+
+      <span class="iconfont icon-dayuhao " id="h1-span"></span>
+    </div>
+    <div class="h1">
+
+      <p class="h1-p" >附加时钟<br/>不同时区的时钟</p>
+      <span class="iconfont icon-dayuhao " id="h1-span" ></span>
+
+    </div>
+  </div>
+  <div class="right-three">
+    <div>
+      <span class="iconfont icon-31yiwen" style="font-size:0.5em;"></span>
+      <p>获取帮助</p>
+    </div>
+    <div>
+      <span class="iconfont icon-kuaisufankuifankuiduihua"></span>
+      <p>提供反馈</p>
+    </div>
+  </div>
+</div>

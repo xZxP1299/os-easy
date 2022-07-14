@@ -1,0 +1,400 @@
+/* app css stylesheet */
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  padding: 20px;
+}
+
+.menu:before {
+  content: "";
+
+}
+
+.menu:after {
+  content: "";
+
+}
+
+.menu>li {
+  display: block;
+  margin: 5px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.menu>li::after {
+  content: "";
+  display: block;
+  width: 3px;
+  height: 50%;
+  border-radius: 5px;
+  background-color: rgb(0, 71, 179);
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  opacity: 0;
+  position: absolute;
+}
+
+.menu>li:hover::after{
+  opacity: 1;
+}
+
+
+.menu>li+li:before {
+  content: "";
+}
+
+.menu>li+li:before {
+  content: "";
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  top: 50px;
+  width: 300px;
+  padding: 15px;
+}
+
+.left-one {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.left-one p {
+  height: 4px;
+  font-size: 0.8em;
+}
+
+.left-two {
+  height: 25px;
+  border-style: hidden;
+  display: inline-flex;
+  margin: 10px;
+  border-width: 1px;
+  box-shadow: 0.2px 0.4px 2px;
+}
+
+.left-two span {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  font-size: 15px;
+}
+
+.letf-three {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-two div {
+  height: 80px;
+  width: 560px;
+  display: flex;
+  background-color: whitesmoke;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.right-two span {
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  margin: 10px;
+}
+
+.right-p {
+  display: flex;
+  align-items: center;
+  font-size: 0.8em;
+}
+
+.right-three div {
+  display: flex;
+  flex-direction: row;
+}
+
+.right-three span {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.right-three p {
+  font-size: 0.5em;
+  margin-left: 10px;
+  color: blue;
+}
+
+.background {
+  width: 1000px;
+  height: 750px;
+  background: linear-gradient(to right, rgba(147, 183, 210, 1) 0%, rgba(229, 239, 245, 1) 42%, rgba(229, 239, 245, 1) 59%, rgba(229, 239, 245, 1) 91%);
+}
+
+.right-two div:hover {
+  height: 80px;
+  width: 560px;
+  display: flex;
+  background-color: #dfdfe9;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.right-two div:hover select {
+  background-color: #dfdfe9;
+
+}
+
+.menu>li:hover {
+  background-color: #d3d3da;
+  list-style: before;
+}
+
+
+
+.left-two input:hover {
+  outline: none;
+}
+
+.right-two select {
+  height: 25px;
+  display: flex;
+  background-color: whitesmoke;
+  border-radius: 8px;
+  border-style: solid;
+  position: absolute;
+  margin-top: 27px;
+  margin-left: 450px;
+}
+
+.h3{
+  display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    height: 30px;
+}
+
+.view7{
+  display: flex;
+  flex-direction: column;
+}
+
+.view7 .view7-one{
+  height: 80px;
+  width: 560px;
+  background: whitesmoke;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.view7 .view7-one1{
+  height: 80px;
+  width: 560px;
+  background: pink;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  border-radius: 10px;
+  position: relative;
+}
+
+
+.view7 .view7-one:hover{
+  background: white;
+}
+
+.view7 p{
+  display: flex;
+  align-items: center;
+  margin:10px;
+} 
+
+.view7 span {
+  display: flex;
+  align-items: center;
+  margin:10px;
+} 
+
+.view7 button{
+  display: flex;
+  align-items: center;
+  width: 50px;
+  height: 30px;
+  background-color: whitesmoke;
+  border-style: 0.5em solid;
+  margin-top: 25px;
+}
+
+.page{
+  height: 500px;
+  
+}
+
+.first{
+  display: flex;
+  flex-direction: column;
+}
+
+.first-item{
+  flex-direction: row;
+  display: flex;
+  height: 80px;
+  width: 560px;
+  display: flex;
+  background-color: white;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.first-item:hover{
+  background-color: whitesmoke;
+}
+
+.first-item span{
+  display: flex;
+  align-items: center;
+  margin:20px;
+}
+.first-item a {
+  font-size: 0.8em;
+  display: flex;
+  margin-top:20px;
+}
+
+.right-one h5{
+  position:absolute; 
+  margin-bottom:0;
+}
+
+.right-one button{
+  height:30px; position:absolute; margin-left:500px;margin-top:29px;color: white; background-color: blue; border-radius: 7px; border-style:none;
+}
+
+p.right-one-items{
+  position: absolute; font-size:0.5em;margin-top:40px;
+}
+
+.top {
+  display: flex; justify-content:space-between; width: 1000px;
+}
+
+.two{
+  display:flex; align-items:center;
+}
+
+.left-two input{
+  border-style:hidden; width:284px ; color: rgb(107, 116, 116); outline: white;
+}
+
+p.gaoji{
+  font-size: 0.8em; position:absolute; margin-top:25px; margin-left: 50px;
+}
+
+p.chuandi{
+  font-size: 0.4em; position:absolute; margin-top:40px; margin-left: 50px
+}
+
+p.yulan{
+  font-size: 0.8em; position:absolute; margin-top:25px; margin-left: 50px;
+}
+
+p.fankui{
+  font-size: 0.4em; position:absolute; margin-top:40px; margin-left: 50px;
+}
+
+
+.my-button {
+  padding: 1px;
+  background-color:black;
+  color: #333;
+  /* border: 1px solid #404450; */
+  border-radius: 4px;
+  margin-right: 10px;
+  
+}
+.my-button.blue {
+  background-color: #0068c0;
+  color: #fff;
+  padding:10px;
+}
+
+.h1:hover{
+  background-color: white;
+}
+
+.bant{
+  margin-left:20px;
+}
+
+.bant1{
+  position: absolute;
+   margin-left:460px;
+}
+
+.view7-one .timeout{
+  position: absolute; margin-left:40px;margin-top:30px
+}
+
+.view7-one .tergether{
+  font-size: 0.6em;
+}
+
+.h1-chinese{
+  display: none;
+}
+
+.chinese-choose{
+  width:120px;
+  height: 160px;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px ;
+  position: relative;
+  justify-content: space-evenly;
+}
+
+.chineseList:hover{
+ 
+  background-color: white;
+  
+}
+
+.chineseList{
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.studyBox{
+  margin-top: -30px;
+   margin-left: 450px;
+}
+
+.page-title{
+  display: flex;
+  height: 40px;
+  font-size: 1.5em;
+  margin: 10px;
+}

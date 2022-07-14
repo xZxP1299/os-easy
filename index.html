@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp" ng-app="myApp" ng-controller="myCtrl">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>设置</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="./css/iconfont.css">
+  <link rel="stylesheet" href="/view12/view12.css">
+  <link rel="stylesheet" href="/view14/view14.css">
+  <link rel="stylesheet" href="./components/components.css">
+  <style>
+    .box {
+      font-size: 25px;
+      margin: 5px;
+    }
+
+    .head {
+      font-size: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 10px;
+
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+      letter-spacing: 1.5px;
+    }
+
+    .one {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="background">
+    <!-- 顶端导航栏 -->
+    <div class="top" >
+
+      <div class="one">
+        <span class="iconfont icon-zuojiantou box" ng-click="back()"
+          style="display: flex; flex-direction:column ;justify-content:center  "></span>
+        <p style="margin-left: 15px;">设置</p>
+      </div>
+      <div  class="two">
+        <span class="iconfont icon-suoxiao box "></span>
+        <span class="iconfont icon-24gl-square box"></span>
+        <span class="iconfont icon-cha box"></span>
+      </div>
+
+    </div>
+
+     <!-- 左边导航部分 -->
+    <div class="left">
+      <div class="left-one">
+        <span class="iconfont icon-touxiang head"></span>
+        <div class="left-one1">
+          <p>张垚</p>
+          <p>mystorp@gmail.com</p>
+        </div>
+
+      </div>
+      <div class="left-two">
+        <input type="text" value="查找设置" >
+        <span class="iconfont icon-sousuo" style="background: white;"></span>
+      </div>
+      <div class="left-three">
+        <ul class="menu" ng-init="menuList">
+          <li ng-repeat="x in menuList">
+             <span class="{{ x.class }}"></span>
+             <a data-page="{{x.name}}" href="#!/{{ x.href }}" ng-click="onJumpPage({ title:x.name,url:x.href},1)">{{x.name}}</a>
+          </li>
+          <!-- <li>
+            <span class="iconfont icon-xitong box"></span>
+            <a href="#!/view1">系统</a>
+          </li>
+          <li>
+            <span class="iconfont icon-lanya box"></span>
+            <a href="#!/view2">蓝牙和其他设备</a>
+          </li>
+          <li>
+            <span class="iconfont icon-wuxianwangluo box"></span>
+            <a href="#!/view3">网络和Internet</a>
+          </li>
+          <li>
+            <span class="iconfont icon-shouye box"></span>
+            <a href="#!/view4">个性化</a>
+          </li>
+          <li>
+            <span class=" iconfont icon-yingyong box"></span>
+            <a href="#!/view5">应用</a>
+          </li>
+          <li>
+            <span class="iconfont icon-zhanghu box"></span>
+            <a href="#!/view6">账户</a>
+          </li>
+          <li>
+            <span class="iconfont icon-shijian box"></span>
+            <a href="#!/view7">时间和语言</a>
+          </li>
+          <li>
+            <span class="iconfont icon-youxi box"></span>
+            <a href="#!/view8">游戏</a>
+          </li>
+          <li>
+            <span class="iconfont icon-fuzhushezhi box"></span>
+            <a href="#!/view9">辅助功能</a>
+          </li>
+          <li>
+            <span class="iconfont icon-anquan box"></span>
+            <a href="#!/view10">隐私和安全性</a>
+          </li>
+          <li>
+            <span class="iconfont icon-gengxin box"></span>
+            <a href="#!/view11">Windows更新</a>
+          </li> -->
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- 右边导航部分 -->
+    <div style="margin-left: 360px;">
+    
+    <!-- 面包屑 -->
+      <div class="page-title" >
+        <!-- <a ng-repeat="x in crumbs" href="!#/" class="h3" ng.click="jump()" >{{item}}</a> -->
+        <a ng-repeat="x in crumbs" ng-click="onJumpPage({ title:x.title,url:x.url.replace('#!/','')},x.zIndex)"  >
+          <span ng-show="{{x.right}}"> > </span>{{x.title}}
+        </a>
+        
+      </div>
+      
+    </div>
+    <div ng-view style="position: absolute; margin-left:350px"></div>
+    
+    
+    <!-- <div>demo 版本: v<span app-version></span></div> -->
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/angular-route/angular-route.js"></script>
+    <script src="app.js"></script>
+    <script src="view1/view1.js"></script>
+    <script src="view2/view2.js"></script>
+    <script src="view3/view3.js"></script>
+    <script src="view4/view4.js"></script>
+    <script src="view5/view5.js"></script>
+    <script src="view6/view6.js"></script>
+    <script src="view7/view7.js"></script>
+    <script src="view8/view8.js"></script>
+    <script src="view9/view9.js"></script>
+    <script src="view10/view10.js"></script>
+    <script src="view11/view11.js"></script>
+    <script src="view12/view12.js"></script>
+    <script src="view13/view13.js"></script>
+    <script src="view14/view14.js"></script>
+    <script src="view15/view15.js"></script>
+    <script src="view16/view16.js"></script>
+    <script src="view17/view17.js"></script>
+    <script src="./components/components.js"></script>
+    
+    <script src="core/version/version.js"></script>
+    <script src="core/version/version-directive.js"></script>
+    <script src="core/version/interpolate-filter.js"></script>
+  </div>
+
+</body>
+
+</html>

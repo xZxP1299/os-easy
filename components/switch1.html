@@ -1,0 +1,82 @@
+<div class="switch">
+    <label>{{switch?'开':'关'}}</label>
+    <div class="switch-box">
+        <input type="checkbox" ng-checked="switch" ng-model="switch" ng-change="send2parent(switch)" />
+        <div class="trigger"></div>
+    </div>
+</div>
+
+<style>
+    switch1{
+        display: flex;
+        align-items: center;
+    }
+    .switch{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90px;
+        --w:30px;
+        --h:15px;
+    }
+    label {
+        font-size: 12px;
+        color: rgb(82, 82, 82);
+        margin-right: 8px;
+    }
+
+    .switch .switch-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: var(--w);
+        height: var(--h);
+        position: relative;
+    }
+
+    .switch input[type="checkbox"] {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        z-index: 99;
+    }
+
+    .switch .trigger {
+        position: absolute;
+        cursor: pointer;
+        text-indent: -9999px;
+        width: var(--w);
+        height: var(--h);
+        background: grey;
+        display: block;
+        border-radius: 100px;
+        z-index: 0;
+    }
+
+    .switch .trigger:after {
+        content: "";
+        position: absolute;
+        left: 4px;
+        top: 2px;
+        width: calc(var(--h) - 4px);
+        height: calc(var(--h) - 4px);
+        background: #fff;
+        border-radius: var(--h);
+        transition: 0.3s;
+    }
+
+    .switch input:checked+.trigger {
+        background: #bada55;
+    }
+
+    .switch input:checked+.trigger:after {
+        left: calc(100% - 5px);
+        transform: translateX(-100%);
+    }
+
+    .switch input:active+.trigger:after {
+        width: calc(var(--w) *0.85);
+
+    }
+</style>

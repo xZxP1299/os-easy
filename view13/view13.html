@@ -1,0 +1,35 @@
+<div class="page" ng-app="myApp.view13" ng-controller="View13Ctrl">
+  <div class="view7">
+     <div class="view7-one">
+       <p>当前日期和时间</p>
+       <span>2022年7月11日,9.57</span>
+     </div>
+     <div class="view7-one">
+       <p>自动设置时间</p>
+       <switch opened="false"></switch>
+     </div>
+     <div class="view7-one">
+       <p>自动调整为夏令营时间</p>
+       <switch opened="false"></switch>
+     </div>
+     <div class="view7-one">
+       <span class="iconfont icon-shijian box"></span>
+       <p style="position: absolute; margin-left:40px;margin-top:30px">时区</p>
+       <dropdown default="日历" source="api/zone.json"></dropdown>
+     </div>
+     <h6 style="margin-left: 15px; margin-top: 50px;" >其他设置</h6>
+     <div class="view7-one">
+       <p>自动设置时区</p>
+       <switch opened="false"></switch>
+     </div>
+     <div class="view7-one">
+       <p>手动设置日期和时间</p>
+       <button>更改</button>
+     </div>
+     <div class="view7-one">
+       <p>手动设置日期和时间</p>
+       <button>更改</button>
+     </div>
+    
+  </div>
+</div>

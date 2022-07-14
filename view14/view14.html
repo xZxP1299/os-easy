@@ -1,0 +1,111 @@
+<!-- 语言和区域 -->
+<div class="page">
+  <h6 class="yuyan">相关链接</h6>
+  <div class="yuyan-items">
+
+    <div class="h1">
+      <div class="h1-view12">
+        <span class="iconfont icon-yuyan box" style="display:flex; align-items:center;"></span>
+        <a href="">Windows显示语言<br/>"设置"和"文件资源管理器”等Windows功能将使用此语言显示</a>
+      </div>
+      
+      <dropdown default="英语" source="api/language.json"></dropdown>
+    </div>
+
+    <div class="h1" >
+      <div class="h1-view12">
+        <a href="">首选语言<br/>Microsoft Store应用将以此列表中支持的第一种语言显示</a>
+        <button ng-click="btn()" class="my-button blue">添加语言</button>
+      </div>
+    </div>
+
+    <div ng-class="chinese?'h1':'h1-chinese'">
+      <div class="h1-view12">
+        <span class="iconfont icon-diandiandian box" style="display:flex; align-items:center;"></span>
+        <a href="">中文(简体,中国)<br/>语言包,文本到语音转换,语音识别,手写,基本输入法</a>
+      </div>
+      <span class="iconfont icon-qita box" id="h1-span" ng-click="chooseChinese()" ></span>
+    </div>
+
+<div class="studyBox">
+
+  <div ng-class="chineseChoose?'chinese-choose':'h1-chinese'">
+    <div ng-repeat="x in chineseList" class="chineseList" >
+        <span class="{{x.class}}" ></span>
+        <p>{{x.chinese}}</p>
+    </div>
+ </div>
+
+</div>
+    
+
+
+
+  </div>
+  <h6 class="yuyan" style="margin-top:90px;">区域</h6>
+
+  <div class="h1">
+
+    <span class="iconfont icon-kuaisufankuifankuiduihua box" style="display:flex; align-items:center;"></span>
+    <a href="">国家或地区<br />Windows和应用可能会根据你所在的国家或地区向你提供本地内容</a>
+    <dropdown default="中国" source="api/country.json"></dropdown>
+
+  </div>
+
+  <div>
+    <div class="h1">
+
+      <span class="iconfont icon-yuyan box" style="display:flex; align-items:center;margin:10px"></span>
+      <a href="">区域格式<br />"Windows和某些应用根据区域格式设置日期和时间格式</a>
+      <div class="down" >
+        <dropdown class="bant" default="英语" source="api/region.json"></dropdown>
+        <span class="iconfont icon-xiangxia box" ng-click="area()" ></span>
+      </div>
+      
+    </div>
+    
+  </div>
+
+  <div class="areaCss" >
+    <div ng-repeat="x in areaList" ng-class=" areaValue?'area':'areaHide' ">
+      <span>{{x.index}}:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{x.value}}</span>
+  </div>
+
+  </div>
+  
+  
+
+  <h6 class="yuyan">相关设置</h6>
+  <div class="yuyan-items">
+
+    <div class="h1" ng-click="onJumpPage({ title:x.title,url:x.url},x.zIndex)" >
+      <div class="h1-view12">
+        <span class="iconfont icon-shurufa box" style="display:flex; align-items:center;"></span>
+      <a href="#!/view15"  >输入<br />拼写检查、自动更正、文本建议</a>
+      </div>
+      
+      <span class="iconfont icon-dayuhao" id="h1-span" ></span>
+    </div>
+    <div class="h1">
+      <div class="h1-view12">
+        <span class="iconfont icon-kuaisufankuifankuiduihua box" style="display:flex; align-items:center;"></span>
+        <a href="">管理语言设置</a>
+
+      </div>
+      
+      <span class="iconfont icon-dayuhao" id="h1-span"></span>
+    </div>
+
+  </div>
+  <div class="right-three">
+    <div>
+        <span class="iconfont icon-31yiwen" style="font-size:0.5em;"></span>
+        <p>获取帮助</p>
+    </div>
+    <div>
+        <span class="iconfont icon-kuaisufankuifankuiduihua"></span>
+        <p>提供反馈</p>
+    </div>
+</div>
+
+</div>

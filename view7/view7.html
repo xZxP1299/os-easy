@@ -1,0 +1,16 @@
+
+<div ng-app="myApp.view7" ng-controller="View7Ctrl" >
+    
+    <div class="first" ng-init="firstList"  >
+
+       <div class="first-item" ng-repeat="x in firstList">
+           <span class="{{x.class}}"></span>
+           <div>
+            <a href="#!/{{x.href}}" ng-click="onJumpPage({ title:x.title,url:x.url},x.zIndex)" >{{x.p1}}<br/>{{x.p2}}</a>
+           </div>
+           <span class="iconfont icon-dayuhao" style="position:absolute; margin-top:30px;margin-left:520px"></span>
+       </div>
+
+    </div>
+
+</div>

@@ -1,0 +1,67 @@
+<div class="right" style="width:600px;" ng-app="myApp.view1" ng-controller="View1Ctrl">
+
+    <div class="right-one" style="display: flex;">
+        <span class="iconfont icon-gengxin" style="font-size: 70px;display: flex; align-items: center;"></span>
+        <div>
+            <h5>你使用的是最新版本</h5>
+            <p  class="right-one-items">上次检查时间: 今天， <span
+                    id="time"></span> </p>
+        </div>
+        <button
+            
+            onclick="window.checkUpdate()">检查更新</button>
+    </div>
+    <p style="margin-left:15px; margin-top:20px;" >更多选项</p>
+    <div class="right-two" ng-app="myApp.view1" ng-controller="View1Ctrl">
+
+        <div ng-init="selectList">
+            <span class="iconfont icon-24gl-pause2"></span>
+            <p class="right-p">暂停更新</p>
+
+            <select>
+                <option ng-repeat="x in selectList">{{x}}</option>
+            </select>
+
+        </div>
+        <div>
+            <span class="iconfont icon-zuixingengxin"></span>
+            <p class="right-p">更新历史记录</p>
+            <span class="iconfont icon-dayuhao "
+                style="position:absolute; margin-top: 30px; margin-left: 520px;"></span>
+        </div>
+        <div>
+            <span class="iconfont icon-fuzhushezhi"></span>
+            <!-- <div style="position: flex; flex-direction:column;"> -->
+            <p  class="gaoji">高级选项</p>
+            <p  class="chuandi">传递优化、可选更新、活跃时间以及其他更新设置
+            </p>
+            <!-- </div> -->
+
+            <span class="iconfont icon-dayuhao "
+                style="position:absolute; margin-top: 30px; margin-left: 520px;"></span>
+        </div>
+        <div>
+            <span class="iconfont icon-xiaomaochushou"></span>
+            <p  class="yulan">Windows预览体验计划</p>
+            <p  class="fankui">
+                获取Windows的预览版本,以分享有关新功能和更新的反馈</p>
+            <span class="iconfont icon-dayuhao "
+                style="position:absolute; margin-top: 30px; margin-left: 520px;"></span>
+        </div>
+
+    </div>
+
+    <div class="right-three">
+        <div>
+            <span class="iconfont icon-31yiwen" style="font-size:0.5em;"></span>
+            <p>获取帮助</p>
+        </div>
+        <div>
+            <span class="iconfont icon-kuaisufankuifankuiduihua"></span>
+            <p>提供反馈</p>
+        </div>
+    </div>
+
+
+
+</div>

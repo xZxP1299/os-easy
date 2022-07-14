@@ -1,0 +1,6 @@
+<select class="dropdown">
+     <option ng-if="$ctrl.err">error</option>
+     <option ng-selected="$ctrl.default ? option.key.includes($ctrl.default) : ''" ng-repeat="option in $ctrl.data" ng-value="option.value">
+        {{option.key}}
+    </option>
+</select>

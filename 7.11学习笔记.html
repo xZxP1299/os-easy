@@ -1,0 +1,24 @@
+一.angular.js基本语法
+   1.ng-app初始化div为ngjs程序
+   2.ng.init初始化数据
+   3.ng-modol双向绑定
+   4.ng-repeat循环一个对象组 :: item in align-items 
+   5. $Scope(作用域) //类似于this的用法  ::只需要在html页面将数据引用进ng-controller的标签中
+      就可在js文件中读取数据,类似于微信小程序   $rootscope
+   6.控制器 .controller("[ng-controller中定义的值]",function(%scope){    //要最初申明myapp
+        
+   })
+
+二.angular.js 路由
+ 
+ js文件中要有angular.module('',[ngRoute模块])
+ 直接 #!/ + "地址" 转页面
+
+三.angular.js HTTP请求 
+ GET请求 
+ .controller('',function($scope,$http)){     //funciton中不能漏掉$http ;
+
+ }
+
+四.angular.js rootscope有一定了解 
+  全局rootscope

@@ -1,0 +1,89 @@
+<!-- 输入 -->
+<div class="page">
+
+  <div class="yuyan-items">
+
+    <div class="h1">
+
+      <div class="h1-switch">
+
+        <span class="iconfont icon-shurufa box"   ></span>
+        <a href=""  >触摸键盘</a>
+        <span class="iconfont icon-xiangxia"  ng-click="inputChange()" id="iiput" ></span>
+        <!-- <span class="iconfont icon-xiangxia box"  ></span> -->
+
+      </div>
+      
+    </div>
+
+    <div ng-repeat="x in inputList" ng-class="inputchange?'downInput':'upInput'" >
+      <div class="inputClass" >
+            <input type="checkbox">
+            <span>{{x.value}}</span>
+            <span class="{{x.class}}" ></span>
+      </div> 
+    </div>
+   
+    <div class="h1"  >
+      <div class="h1-switch">
+        <span class="iconfont icon-shurufa box" class="span-list"></span>
+        <a href="">在物理键盘上键入时显示文本建议</br>在某些语言中无法使用</a>
+      </div>
+      <switch1 ng-model="switch1"></switch1>
+    </div>
+
+    <div class="h1" class="h1-switch" ng-class="switch1?'h1-one':''" >
+      <div class="h1-switch">
+        <span class="iconfont icon-yuyan box"  class="span-list"></span>
+        <a href="">多语言文本建议</br>根据我的语言首选项显示文本建议</a>
+      </div>
+      <switch1 ng-model="switch"></switch1>
+    </div>
+
+    
+
+  </div>
+<!-- 
+  <div ng-init="shuruList" ng-repeat="x in shuruList" class="h1" ng-class="switch?'h1-one':''">
+    <span class="{{ x.class }}"></span>
+    <a href="">{{x.p1}}</br>{{x.p2}}</a>
+     <span class="h1-span" style="margin-left: 240px; " >{{item1}}</span>
+       <input type="checkbox" ng-click="change1()" /> -->
+    
+  <!-- </div>  -->
+  
+  <!-- <switch1 ng-model="switch"></switch1> -->
+
+
+
+
+  <div ng-init="shuruList1" ng-repeat="x in shuruList1" class="h1">
+    <div class="h1-switch">
+      <span class="{{ x.class }}"></span>
+      <a href="{{x.href}}" ng-click="onJumpPage({ title:x.title,url:x.url},x.zIndex)" >{{x.p1}}</br>{{x.p2}}</a>
+    </div>
+   
+    <span class="iconfont icon-dayuhao" id="h1-span" ></span>
+  </div>
+
+  <h6 class="yuyan">相关设置</h6>
+
+  <div ng-init="shuruList2" ng-repeat="x in shuruList2" class="h1">
+    <div class="h1-switch">
+      <span class="{{ x.class }}"></span>
+    <a href="{{x.href}}">{{x.p1}}</br>{{x.p2}}</a>
+    </div>
+    <span class="iconfont icon-dayuhao" id="h1-span" ></span>
+  </div>
+  <div class="right-three">
+    <div>
+      <span class="iconfont icon-31yiwen" style="font-size:0.5em;"></span>
+      <p>获取帮助</p>
+    </div>
+    <div>
+      <span class="iconfont icon-kuaisufankuifankuiduihua"></span>
+      <p>提供反馈</p>
+    </div>
+  </div>
+
+</div>
